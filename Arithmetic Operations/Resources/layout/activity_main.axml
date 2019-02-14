@@ -4,29 +4,106 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+ <LinearLayout
+  android:orientation="horizontal"
+  android:minWidth="25px"
+  android:minHeight="25px"
+  android:layout_marginTop="10dp"
+  android:layout_marginLeft="65dp"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/linearLayout4" >
+  <TextView
+   android:textColor="#4B0082"
+   android:text="Arithmetic Operations"
+ android:textSize="25dp"
+   android:layout_width="wrap_content"
+   android:layout_height="match_parent"
+   android:id="@+id/textView1" />
+ </LinearLayout>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop = "60dp"
+		android:rowCount ="2"
+		android:columnCount = "2"
+		android:id="@+id/gridLayout1" >
+		<TextView
+			android:text="Number 1"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:id="@+id/tvnum1" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_marginLeft="15dp"
+			android:id="@+id/etnum1" />
+		<TextView
+			android:text="Number 2"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:id="@+id/tvnum2" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_marginLeft="15dp"
+			android:id="@+id/etnum2" />
+	</GridLayout>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:rowCount ="1"
+		android:columnCount = "4"
+		android:layout_marginTop="165dp"
+		android:id="@+id/gridLayout1" >
+		<Button
+			android:text="Plus"
+			android:textColor="#ffffff"
+			android:id="@+id/bnplus"
+			android:backgroundTint="#ff42a5f5"
+			android:minWidth="10dp" />
+		<Button
+			android:text="Sub"
+			android:textColor="#ffffff"
+			android:backgroundTint="#ff42a5f5"
+			android:id="@+id/bnsub"
+			android:textSize="12dp"
+			android:minWidth="10dp"  />
+		<Button
+			android:text="Mul"
+			android:textColor="#ffffff"
+			android:backgroundTint="#ff42a5f5"
+			android:id="@+id/bnmul"
+			android:minWidth="10dp" />
+		<Button
+			android:text="Div"
+			android:textColor="#ffffff"
+			android:backgroundTint="#ff42a5f5"
+			android:id="@+id/bndiv"
+			android:minWidth="10dp" />
+		</GridLayout>
+		<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop = "220dp"
+		android:rowCount ="1"
+		android:columnCount = "2"
+		android:id="@+id/gridLayout1" >
+		<TextView
+			android:text="Result"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:id="@+id/tvresult" />
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+		<EditText
+			android:inputType="numberDecimal"
+			android:layout_marginLeft="50dp"
+			android:id="@+id/etresult" />
+		</GridLayout>
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-    </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
 
 </android.support.design.widget.CoordinatorLayout>
